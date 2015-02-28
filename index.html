@@ -14,14 +14,24 @@
     <![endif]-->
 
     <title>Warsaw Scala Forty-Fives Testing #scala45pl - Scala enthusiasts day</title>
+
+    <style>
+      .inner { width: 80%; }
+      header h1 { width: 100%; }
+      header h2 { width: 100%; }
+      #main-content { width: 100%; }
+    </style>
+
   </head>
 
   <body>
     <header>
       <div class="inner">
         <h1>Warsaw Scala Forty-Fives Testing #scala45pl - Scala enthusiasts day</h1>
-        <h2>Full day Scala Forty-Fives (talks) about testing techniques at Saturday, March, 7th, 2015 in Warsaw, Poland by @WarszawScala</h2>
-        <a href="https://github.com/WarsawScala/scala45-testing" class="button"><small>View project on</small> GitHub</a>
+        <h2>Full-day Scala Forty-Fives (talks) about Scala testing tools at Saturday, March, 7th, 2015 in Warsaw, Poland by @WarszawScala</h2>
+        <br>
+        <a href="https://twitter.com/WarszawScaLa" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @WarszawScaLa</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
       </div>
     </header>
 
@@ -29,10 +39,17 @@
       <div class="inner clearfix">
         <section id="main-content">
       
+          <h2>About</h2>
 
-          <h3>
-          <a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>What</h3>
-          <h4>ScalaTest</h4>
+          <p><a href="http://www.meetup.com/WarszawScaLa/">Warszawska Grupa Entuzjastów języka programowania Scala - Warsaw Scala Enthusiasts</a> - ma zaszczyt zaprosić na warszawską sobotę o testowaniu korzystając z narzędzi języka Scala nazywanej <strong>sobotnimi czterdziestopięciominutówkami scalowymi</strong>.
+          </p>
+          <p>W trakcie kilku czterdziestopięciominutówek będziesz mógł/mogła poznać narzędzia do tworzenia testów jednostkowych, akceptacyjnych czy integracyjnych w języku Scala od podstaw i już kolejnego dnia wdrożyć je we własnych projektach. Niezapomniane wrażenie! Będziesz mógł/mogła poznać dostępne biblioteki i zestawy narzędziowe dla Scali, które poszerzą Twój warsztat programistyczny! Wszystko w ciągu kilku godzin spędzonych w miłym towarzystwie scalowym.</p>
+
+          <p>Ideą, która przyświeca temu wydarzeniu, jest uproszczenie wejścia do języka Scala, każdemu, kto jest nowy w temacie lub który próbował, ale jakoś jeszcze nie wyszło. Chcemy również zademonstrować wartościowe biblioteki i ich funkcjonalności, aby wzbogacić Twój obecny arsenał technologiczny.</p>
+
+          <h2>Topics</h2>
+
+          <h3>ScalaTest</h3>
           <p>Paweł Grajewski</p>
           
           <p>Wydawałoby się, że niewiele może być skomplikowanego we <i>frameworku</i> wspomagającym
@@ -46,64 +63,58 @@
           możemy precyzyjnie dostosować nasz styl testowania do specyfiki konkretnej aplikacji,
           czyniąc nasze testy jeszcze bardziej przejrzystymi i łatwymi w utrzymaniu.</p>
 
-          <h4>Testing Spray applications</h4>
-          <p>Paweł Kopiczko</p>
+          <h3>Testing Spray applications</h3>
+          <p><a href="http://www.meetup.com/WarszawScaLa/members/89783242/">Paweł Kopiczko</a></p>
 
-            The term <b>microservices</b> becomes more and more popular nowadays. Integration
-            plays a key role when it comes to employing them into project
-            architecture. This part can be accomplished with usage of
-            one of the best known Scala projects - <a href="http://spray.io/">spray.io</a>.
-            During the presentation I am going to try to show what exactly the
-            integration layer (i.e. REST service) responsibilities are, and
-            how to sleep well before issuing first GET request to a production
-            application.
-            <b/>
-            Termin <b>mikroserwisy</b> to ostatnio modne hasło. Ważnym elementem jest ich
-            integracja. Tu z pomocą przychodzi nam jeden ze sztandarowych
-            projektów napisanych w Scali - <a href="http://spray.io/">spray.io</a>.
-            Postaram się przybliżyć, co tak naprawdę wchodzi w zakres
-            odpowiedzialności warstwy integracyjnej (w tym przypadku usługi
-            RESTowej), a także, jak zapewnić sobie komfort psychiczny przed
-            wywołaniem pierwszego żądania GET w aplikacji produkcyjnej.
+          <p>The term <b>microservices</b> becomes more and more popular nowadays. Integration
+          plays a key role when it comes to employing them into project
+          architecture. This part can be accomplished with usage of
+          one of the best known Scala projects - <a href="http://spray.io/">spray.io</a>.
+          During the presentation I am going to try to show what exactly the
+          integration layer (i.e. REST service) responsibilities are, and
+          how to sleep well before issuing first GET request to a production
+          application.</p>
 
-          <h4>ScalaCheck</h4>
-          <p>Piotr Trzpil</p>
+          <p>Termin <b>mikroserwisy</b> to ostatnio modne hasło. Ważnym elementem jest ich
+          integracja. Tu z pomocą przychodzi nam jeden ze sztandarowych
+          projektów napisanych w Scali - <a href="http://spray.io/">spray.io</a>.
+          Postaram się przybliżyć, co tak naprawdę wchodzi w zakres
+          odpowiedzialności warstwy integracyjnej (w tym przypadku usługi
+          RESTowej), a także, jak zapewnić sobie komfort psychiczny przed
+          wywołaniem pierwszego żądania GET w aplikacji produkcyjnej.</p>
+
+          <h3>ScalaCheck</h3>
+          <p><a href="http://www.meetup.com/WarszawScaLa/members/120658252/">Piotr Trzpil</a></p>
           <p><a href="http://scalacheck.org/">ScalaCheck</a> is a library used to write unit tests that assert a certain "law" of an object or method, in contrast to behavior. 
             Such law is automatically proven or disproven by verifying it against many randomly generated data examples. 
             We will talk about property-based testing and how and when to use it instead of conventional assertions.</p>
 
-          <h4>Gatling</h4>
+          <h3>Gatling</h3>
           <p>FIXME...Andrzej Michałowski</p>
 
-          <h4>specs2</h4>
+          <h3>specs2</h3>
           <p><a href="http://blog.jaceklaskowski.pl">Jacek Laskowski</a></p>
           <p><a href="http://specs2.org/">specs2</a> is <i>a library for writing executable software specifications.</i> In the talk you see what it brings to your testing toolbox and why you should consider it in your projects.</p>
 
-          <h3>
-          <a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Who</h3>
-
+          <h2>Who</h2>
           <p>The conference is led by the Scala community from <a href="http://www.meetup.com/WarszawScaLa/">Warsaw Scala Enthusiasts group</a>.</p>
 
- <h3>
-          <a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Where</h3>
+          <h2>Sponsors</h2>
+          <p>
+            The event would not be possible without the support from the companies below. Consider clicking their logo to show your appreciation for their help.
+          </p>
+          <a href="http://pl.adpilot.com/"><img src="images/adpilot-logo.png"></a>
+          <a href="http://www.javeo.eu/"><img src="images/javeo-logo.png"></a>
+          <a href="http://jtweston.pl"><img src="images/jtweston-logo.png"></a>
 
-          <iframe width="700" height="250" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Politechnika%20Warszawska%20Wydzia%C5%82%20Matematyki%20i%20Nauk%20Informacyjnych%2C%20Warsaw%2C%20Poland&key=AIzaSyBRxecg7KeCj46U-M37-Xh-CnKjRA0guqw"></iframe>
+          <h2>Where</h2>
+          <iframe width="80%" height="250" align="center" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Politechnika%20Warszawska%20Wydzia%C5%82%20Matematyki%20i%20Nauk%20Informacyjnych%2C%20Warsaw%2C%20Poland&key=AIzaSyBRxecg7KeCj46U-M37-Xh-CnKjRA0guqw"></iframe>
 
-
-        </section>
-
-        <aside id="sidebar">
-          <a href="https://twitter.com/WarszawScaLa" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @WarszawScaLa</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-         
-
-          <p class="repo-owner"><a href="https://github.com/WarsawScala/warsaw-scala-saturday"></a> is maintained by <a href="https://github.com/WarsawScala">WarsawScala</a>.</p>
-
+          <h2>Attribution</h2>
           <p>This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the Architect theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.</p>
-        </aside>
+          <p class="repo-owner"><a href="https://github.com/WarsawScala/warsaw-scala-saturday">The page</a> is maintained by <a href="https://github.com/WarsawScala">WarsawScala</a>.</p>
+        </section>
       </div>
     </div>
-
-  
   </body>
 </html>
